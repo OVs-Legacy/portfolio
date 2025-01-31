@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@import "tailwindcss/preflight";
+@import './animations.scss';
+
+@tailwind utilities;
+
+html { overscroll-behavior: none; }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
