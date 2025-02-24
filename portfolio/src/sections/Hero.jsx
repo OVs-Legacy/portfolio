@@ -88,7 +88,7 @@ export default function Hero() {
                     <p className="font-vinyl-header text-5xl text-right !mr-24 text-box-trim">Designer & Programmer</p>
                 </div>
                 <div className="font-vinyl-back font-bold vinyl-backside bg-linear-to-tl from-red-950 to-red-900 rounded-xl w-[40vw] h-[40vw] !px-4 !py-2 text-white overflow-hidden relative">
-                    <div className="absolute right-4 top-4 max-w-[40%]">
+                    <div className="absolute right-8 top-4 max-w-[40%]">
                         <h2 className="!text-2xl">Disc: 01</h2>
                         {projects.filter((project, i) => i < maxProjects).map((project, i) => (
                             <div key={i} className="!pb-2">
@@ -102,7 +102,7 @@ export default function Hero() {
                             <div key={i} className="text-black !mx-auto !mt-auto rotate-45 text-6xl">{languages.icon}</div>
                             ))}
                     </div>
-                    <div className="absolute left-4 bottom-4 max-w-[40%]">
+                    <div className="absolute left-8 bottom-4 max-w-[40%]">
                         <h2 className="!text-2xl">Disc: 02</h2>
                         {projects.filter((project, i) => i >= maxProjects).map((project, i) => (
                             <div key={i} className="!pb-2">
