@@ -10,7 +10,7 @@ export default function Projects() {
                 <h2 className="text-4xl mb-8 text-white">Track List</h2>
                 <div className="space-y-6">
                     {projects.map((project, i) => (
-                        <div key={i} className="p-6 bg-white/10 backdrop-blur-lg rounded-lg hover:bg-white/20 transition-all cursor-pointer">
+                        <div key={i} className="p-6 bg-white/10 rounded-lg hover:bg-white/20 transition-all cursor-pointer">
                             <h3 className="text-xl font-semibold">{project.title}</h3>
                             <p className="text-gray-400">{project.tech}</p>
                         </div>
