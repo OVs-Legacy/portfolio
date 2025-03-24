@@ -5,7 +5,7 @@ export default function Projects() {
     ]
 
     return (
-        <section id="projects" className="min-h-screen pt-20">
+        <section id="projects" className="min-h-screen pt-20 bg-teal-950">
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-4xl mb-8 text-white">Track List</h2>
                 <div className="space-y-6">

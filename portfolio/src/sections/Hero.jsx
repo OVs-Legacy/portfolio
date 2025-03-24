@@ -2,30 +2,31 @@ import {useGSAP} from "@gsap/react";
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import cover from "../assets/images/looking-out.jpg"
+import overlay from "../assets/images/paper-overlay.png"
 gsap.registerPlugin(useGSAP,ScrollTrigger);
 
 export default function Hero() {
     const languages = [
         {title: "C#", icon:
-                <i className="devicon-csharp-plain colored"></i>},
+                <i className="devicon-csharp-plain"></i>},
         {title: "Java", icon:
-                <i className="devicon-java-plain-wordmark colored"></i>},
+                <i className="devicon-java-plain-wordmark"></i>},
         {title: "JavaScript", icon:
-                <i className="devicon-javascript-plain colored"></i>},
+                <i className="devicon-javascript-plain"></i>},
         {title: "HTML", icon:
-                <i className="devicon-html5-plain-wordmark colored"></i>},
+                <i className="devicon-html5-plain-wordmark"></i>},
         {title: "CSS", icon:
-                <i className="devicon-css3-plain-wordmark colored"></i>},
+                <i className="devicon-css3-plain-wordmark"></i>},
         {title: "Tailwind CSS", icon:
-                <i className="devicon-tailwindcss-original colored"></i>},
+                <i className="devicon-tailwindcss-original"></i>},
         {title: "GDScript", icon:
-                <i className="devicon-godot-plain-wordmark colored"></i>},
+                <i className="devicon-godot-plain-wordmark"></i>},
         {title: "React", icon:
-                <i className="devicon-react-original-wordmark colored"></i>},
+                <i className="devicon-react-original-wordmark"></i>},
         {title: "SolidJS", icon:
-                <i className="devicon-solidjs-plain colored"></i>},
+                <i className="devicon-solidjs-plain"></i>},
         {title: "Figma", icon:
-                <i className="devicon-figma-plain colored"></i>},
+                <i className="devicon-figma-plain"></i>},
     ]
     const projects = [
         {title: "The Milkers", description: "Grandma's Milk, a Unity couch co-op game" },
@@ -78,16 +79,18 @@ export default function Hero() {
     }, [])
 
     return (
-        <section className="hero-section h-screen flex items-center justify-center">
+        <section className="hero-section h-screen flex items-center justify-center bg-linear-to-tr from-teal-950 to-teal-900">
             <div className="vinyl-container fixed flex gap-24 pointer-events-none">
-                <div className="vinyl-cover bg-linear-to-tr from-red-950 to-red-900 rounded-xl w-[40vw] h-[40vw] !px-12 !py-12 place-content-center text-red-100">
+                <div className="vinyl-cover bg-linear-to-tr from-red-950 to-red-900 rounded-xl w-[40vw] h-[40vw] !px-12 !py-12 place-content-center text-red-100 overflow-hidden relative shadow-2xl">
+                    <img className="w-full h-full object-cover absolute scale-[155%] opacity-45" src={overlay} alt="overlay" />
                     <p className="font-vinyl-header text-5xl !ml-24 text-box-trim !-mb-[.6%]">Danny den Ouden</p>
                     <div className="w-[90%] h-[90%] !border-8 !border-red-100 !mx-auto overflow-hidden">
                         <img className="grayscale !-mt-[40%]" src={cover} alt="Cover image"/>
                     </div>
                     <p className="font-vinyl-header text-5xl text-right !mr-24 text-box-trim">Designer & Programmer</p>
                 </div>
-                <div className="font-vinyl-back font-bold vinyl-backside bg-linear-to-tl from-red-950 to-red-900 rounded-xl w-[40vw] h-[40vw] !px-4 !py-2 text-white overflow-hidden relative">
+                <div className="font-vinyl-back font-bold vinyl-backside bg-linear-to-tl from-red-950 to-red-900 rounded-xl w-[40vw] h-[40vw] !px-4 !py-2 text-white overflow-hidden relative shadow-2xl">
+                    <img className="w-full h-full object-cover absolute scale-[175%] opacity-45" src={overlay} alt="overlay" />
                     <div className="absolute right-8 top-4 max-w-[40%]">
                         <h2 className="!text-2xl">Disc: 01</h2>
                         {projects.filter((project, i) => i < maxProjects).map((project, i) => (
