@@ -10,7 +10,7 @@ export default function Scene() {
                 <Environment preset="studio"/>
                     <Vinyl />
                 {/* Disable zoom but allow rotation */}
-                <OrbitControls enableZoom={false} />
+                <OrbitControls enabled={false} />
         </Canvas>
     )
 }

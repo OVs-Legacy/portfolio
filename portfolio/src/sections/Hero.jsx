@@ -61,7 +61,7 @@ export default function Hero() {
         gsap.to(".vinyl-canvas", {
             scrollTrigger: {
                 trigger: ".vinyl-container",
-                start: "center center",
+                start: "center+=150 center",
                 end: "+=500",
                 scrub: true,
             },
