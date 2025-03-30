@@ -9,8 +9,6 @@ export default function Vinyl() {
     const model = useLoader(GLTFLoader, '/models/vinyl-player.glb')
     const modelRef = useRef();
 
-    let scrollProgress = 0;
-
     useGSAP(() => {
         if (!modelRef.current) return
 
@@ -34,7 +32,7 @@ export default function Vinyl() {
                 start: "+=150 top",
                 end: "+=650",
                 scrub: true,
-                markers: true,
+                markers: true, //TODO remove this
             }
         });
     }, []);
