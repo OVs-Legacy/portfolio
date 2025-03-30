@@ -24,19 +24,19 @@ export default function Vinyl() {
                 end: "+=650",
                 scrub: true,
             }
-        })
+        });
 
         gsap.to(modelRef.current.rotation, {
-            x: Math.PI * 2, // Full rotation
-            y: Math.PI * 2,
+            x: 60 * (Math.PI / 180),
+            y: -60 * (Math.PI / 180),
             scrollTrigger: {
                 trigger: ".scroll-container", // Your scrollable div
-                start: "+=1500 top",
-                end: "bottom bottom",
+                start: "+=150 top",
+                end: "+=650",
                 scrub: true,
-            },
-            ease: "none"
-        })
+                markers: true,
+            }
+        });
     }, []);
 
     return (
@@ -45,7 +45,7 @@ export default function Vinyl() {
                 ref={modelRef}
                 object={model.scene}
                 position={[0, 0, 0]}
-                rotation={[45, -45, 0]}
+                rotation={[0, 0, 0]}
                 scale={[1, 1, 1]}
             />
         </group>
