@@ -13,28 +13,37 @@ export default function Vinyl() {
         if (!modelRef.current) return
 
         gsap.to(modelRef.current.scale, {
-            x: 2,
-            y: 2,
-            z: 2,
+            x: 2.5,
+            y: 2.5,
+            z: 2.5,
             scrollTrigger: {
                 trigger: ".scroll-container", // Your scrollable div
                 start: "+=150 top",
-                end: "+=650",
+                end: "+=750",
                 scrub: true,
             }
         });
 
         gsap.to(modelRef.current.rotation, {
-            x: 60 * (Math.PI / 180),
-            y: -60 * (Math.PI / 180),
+            x: 80 * (Math.PI / 180),
+            y: -75 * (Math.PI / 180),
             scrollTrigger: {
                 trigger: ".scroll-container", // Your scrollable div
                 start: "+=150 top",
-                end: "+=650",
+                end: "+=750",
                 scrub: true,
-                markers: true, //TODO remove this
             }
         });
+
+        gsap.to(modelRef.current.position, {
+            x: -2,
+            scrollTrigger: {
+                trigger: ".scroll-container",
+                start: "+=500 top",
+                end: "+=800",
+                scrub: true,
+            }
+        })
     }, []);
 
     return (
