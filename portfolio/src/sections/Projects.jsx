@@ -10,11 +10,11 @@ export default function Projects() {
     return (
         <section id="projects" className="min-h-screen pt-20 bg-linear-to-br from-teal-950 to-teal-900">
             {projects.map((project, i) => (
-                <div key={i} className="!p-6 h-screen">
+                <div key={i} className="!p-6  text-white">
                     <h3 className="text-xl font-semibold">{project.title}</h3>
-                    <div className="flex">
-                        <p className="text-sm !px-4 !py-8">{project.company}</p>
-                        <p className="text-sm !px-4 !py-8">{project.tech}</p>
+                    <div className="flex flex-col">
+                        <p className="text-sm !px-1">{project.company}</p>
+                        <p className="text-sm !px-1">{project.tech}</p>
                     </div>
                     <p className="">{project.description}</p>
                 </div>
