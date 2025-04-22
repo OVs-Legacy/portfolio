@@ -29,11 +29,11 @@ export default function Hero() {
                 <i className="devicon-figma-plain"></i>},
     ]
     const projects = [
-        {title: "The Milkers", description: "Grandma's Milk, a Unity couch co-op game" },
-        {title: "Municipality of Eindhoven", description: "Creating a front-end for DICE" },
         {title: "DogFood Studios", description: "Party Morph, a Godot couch co-op game" },
-        {title: "OV's Legacy", description: "Cat Armor, a Minecraft mod" },
+        {title: "Municipality of Eindhoven", description: "Creating a front-end for DICE" },
         {title: "LiberCraft", description: "A website made in SolidJS" },
+        {title: "OV's Legacy", description: "Cat Armor, a Minecraft mod" },
+        {title: "The Milkers", description: "Grandma's Milk, a Unity couch co-op game" },
     ]
     const maxProjects = 3;
 
