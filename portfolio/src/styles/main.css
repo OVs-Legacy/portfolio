@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap');
 @import "tailwindcss";
 @import "tailwindcss/preflight";
 @import './animations.scss';
@@ -7,6 +8,7 @@
 @theme {
     --font-vinyl-header: "Bebas Neue", "sans-serif";
     --font-vinyl-back: "Bona Nova SC", "sans-serif";
+    --font-archivo: "Archivo", sans-serif;
 }
 
 /* latin-ext */
