@@ -66,7 +66,7 @@ export default function Projects() {
         };
         const textContainerClasses = {
           top: "!mt-[5%] text-center",
-          bottom: "!mt-[10%] text-center",
+          bottom: "!mt-[5%] text-center",
           left: "!ml-[30%] text-left",
           right: "!mr-[30%] text-right",
         };
@@ -89,6 +89,9 @@ export default function Projects() {
                 <p className="text-left text-xl whitespace-pre-line">
                   {project.description}
                 </p>
+                <div className="cursor-pointer text-right text-red-400 hover:text-red-600">
+                  Learn more →
+                </div>
               </div>
             </div>
           </div>

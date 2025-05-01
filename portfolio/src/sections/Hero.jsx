@@ -82,14 +82,14 @@ export default function Hero() {
 
   return (
     <section className="hero-section relative z-10 flex h-screen items-center justify-center">
-      <div className="vinyl-container pointer-events-none fixed flex gap-24">
+      <div className="vinyl-container pointer-events-none fixed flex flex-col gap-24 md:flex-row">
         <div className="vinyl-cover relative h-[40vw] w-[40vw] place-content-center overflow-hidden rounded-xl bg-linear-to-tr from-red-950 to-red-900 !px-12 !py-12 text-red-100 shadow-2xl">
           <img
             className="absolute h-full w-full scale-[155%] object-cover opacity-45"
             src={overlay}
             alt="overlay"
           />
-          <p className="font-vinyl-header text-box-trim !-mb-[.6%] !ml-24 text-5xl">
+          <p className="font-vinyl-header text-box-trim !-mb-[.6%] !ml-[10%] text-5xl">
             Danny den Ouden
           </p>
           <div className="!mx-auto h-[90%] w-[90%] overflow-hidden !border-8 !border-red-100">
@@ -99,7 +99,7 @@ export default function Hero() {
               alt="Cover image"
             />
           </div>
-          <p className="font-vinyl-header text-box-trim !mr-24 text-right text-5xl">
+          <p className="font-vinyl-header text-box-trim !mr-[10%] text-right text-5xl">
             Designer & Programmer
           </p>
         </div>

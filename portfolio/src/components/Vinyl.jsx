@@ -51,7 +51,6 @@ export default function Vinyl() {
         start: "center+=150 center",
         end: "+=500",
         scrub: true,
-        markers: true,
       },
     });
     const timeline = gsap.timeline({
@@ -76,7 +75,6 @@ export default function Vinyl() {
         start: "+=1800 top",
         end: "+=800",
         scrub: true,
-        markers: true,
       },
     });
     const thirdTimeline = gsap.timeline({
@@ -85,7 +83,6 @@ export default function Vinyl() {
         start: "+=3100 top",
         end: "+=800",
         scrub: true,
-        markers: true,
       },
     });
     const fourthTimeline = gsap.timeline({
@@ -94,7 +91,6 @@ export default function Vinyl() {
         start: "+=4400 top",
         end: "+=800",
         scrub: true,
-        markers: true,
       },
     });
     const fifthTimeline = gsap.timeline({
@@ -103,14 +99,12 @@ export default function Vinyl() {
         start: "+=5700 top",
         end: "+=800",
         scrub: true,
-        markers: true,
       },
     });
 
     const masterTimeline = gsap.timeline({
       scrollTrigger: {
         trigger: ".scroll-container",
-        markers: true,
       },
     });
 
@@ -131,22 +125,58 @@ export default function Vinyl() {
     firstTimeline.to(modelRef.current.position, {
       x: -2,
     });
-    secondTimeline.to(modelRef.current.position, {
-      x: 0,
-      y: 2,
-    });
-    thirdTimeline.to(modelRef.current.position, {
-      x: 2,
-      y: 0,
-    });
-    fourthTimeline.to(modelRef.current.position, {
-      x: 0,
-      y: -2,
-    });
-    fifthTimeline.to(modelRef.current.position, {
-      x: -2,
-      y: 0,
-    });
+    secondTimeline
+      .to(modelRef.current.position, {
+        x: 0,
+        y: 2,
+      })
+      .to(
+        modelRef.current.rotation,
+        {
+          x: 95 * (Math.PI / 180),
+          y: -90 * (Math.PI / 180),
+        },
+        `<`,
+      );
+    thirdTimeline
+      .to(modelRef.current.position, {
+        x: 2,
+        y: 0,
+      })
+      .to(
+        modelRef.current.rotation,
+        {
+          x: 80 * (Math.PI / 180),
+          y: -115 * (Math.PI / 180),
+        },
+        `<`,
+      );
+    fourthTimeline
+      .to(modelRef.current.position, {
+        x: 0,
+        y: -2,
+      })
+      .to(
+        modelRef.current.rotation,
+        {
+          x: 85 * (Math.PI / 180),
+          y: -90 * (Math.PI / 180),
+        },
+        `<`,
+      );
+    fifthTimeline
+      .to(modelRef.current.position, {
+        x: -2,
+        y: 0,
+      })
+      .to(
+        modelRef.current.rotation,
+        {
+          x: 80 * (Math.PI / 180),
+          y: -75 * (Math.PI / 180),
+        },
+        `<`,
+      );
   }, []);
 
   return (
