@@ -72,6 +72,10 @@
    /* text-box: trim-both cap alphabetic;*/
 }
 
+@utility small-scrollbar {
+    @apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
+}
+
 html { overscroll-behavior: none; }
 
 html, body {
