@@ -158,11 +158,15 @@ export const projects = [
         source: "/images/dice/DiceQuestion.png",
         text: "A snippet of the questionnaire file, where I used varies ways of getting the right data that I needed to enhance the website.",
       },
+      {
+        source: "/images/dice/DiceAtoms.png",
+        text: "By implementing atomic design principles, it is easier to create a cohesive look & feel across different pages, as you are re-using different 'atoms' into 'molecules' to create 'organisms' and so forth. ",
+      },
     ],
   },
   {
     title: "LiberCraft",
-    banner: "/images/LibercraftBanner.png",
+    banner: "/images/liberCraft/LibercraftBanner.png",
     company: "LiberCraft",
     type: "Personal project",
     tech: "SolidJS, TailwindCSS, JS, HTML, CSS, Figma",
@@ -171,22 +175,62 @@ export const projects = [
     description:
       "LiberCraft is a landing page for a Minecraft server and community. The page contains all the key information about the community and highlights various aspects of what they stand for.\n\n" +
       "The landing page is made in SolidJS and uses several custom scripts and visuals for an entertaining page. Using randomly generated quotes to create card-like effects for staff details.",
+    challenge:
+      "LiberCraft was a project I started to help out a community I was part off. The previous owner left due to a conflict and took the old site with them, " +
+      "since I had a bit of experience and wanted to gain more of it, I volunteered to make the new site. \n\n" +
+      "For this site I had a few challenges, as it would be a static site but still allowed for multiple pages. Thus I stumbled upon SolidJs, which works similarly to React. " +
+      "I also really wanted to explore using animations into a site, so I looked into those as well.",
+    results:
+      "The site [Libercraft]{libercraft.net} (the site has now shut down, due to a lack of staff available to maintain the server) is a landing page that tells you all about the server " +
+      "it gives you all information you need, telling you which plugins we use, the staff members, useful commands, and a link to the map of the world(s).",
     workflow: [
       {
-        title: "",
-        summary: "",
+        title: "Redesign",
+        summary:
+          "The community already had an old website before the previous owner left. But the owner took the site with them, so a new one needed to come into its place. " +
+          "Previously the site was more of a forum, we wanted to change it up and make it more of an informational site where people could apply and join. (this was done by just joining the Discord) " +
+          "So I had to make the site from scratch again.",
+      },
+      {
+        title: "Animations",
+        summary:
+          "To make the site more engaging, I worked with GSAP to add animations into the site. This allowed for more interactivity and less of a static feel. Since the community is aimed towards teens, " +
+          "it would also allow for more connection with the target audience.",
+      },
+      {
+        title: "Testing",
+        summary:
+          "To make sure the site was usable for everyone, I put it on a testing environment and send the link to the staff of the community. They could test the site on their own devices " +
+          "to make sure it was responsive, this way I could also get valuable feedback on what I was missing or what was too much.",
+      },
+      {
+        title: "Advertising",
+        summary:
+          "To gain traction for the site and community, I advertised the site on various forum boards like Reddit or TikTok to come and see who we were and what they could do to join us.",
       },
     ],
     images: [
       {
-        source: "",
-        text: "",
+        source: "/images/liberCraft/LiberCraftAd.png",
+        text: "By promoting the site on Reddit, I could gain traction for the site.",
+      },
+      {
+        source: "/images/liberCraft/LiberCraftPhoto.png",
+        text: "To create a connection with the community, their builds would be featured on the site with their coordinates in the game world so players could visit them.",
+      },
+      {
+        source: "/images/liberCraft/LiberCraftStaff.png",
+        text: "To make sure players know who to reach out to if there are problems and see who is responsible for what. I made the staff hierarchy clear with interactable cards.",
+      },
+      {
+        source: "/images/liberCraft/LiberCraftResponsive.png",
+        text: "Making the site responsive was a big part of it, as it needed to be very accessible for any device.",
       },
     ],
   },
   {
     title: "Cat Armor",
-    banner: "/images/CatArmorBanner.png",
+    banner: "/images/catArmor/CatArmorBanner.png",
     company: "OV's Legacy",
     type: "Student project / mod for existing game",
     tech: "Java, Mixin",
@@ -195,16 +239,49 @@ export const projects = [
     description:
       "Cat Armor is a mod for Minecraft. By using Mixin and new objects, I managed to alter the behavior of cats and gave them armor like their wolf counterpart. " +
       "This armor behaves as you would expect. It absorbs physical damage until it breaks. You can repair it, color it, and remove it again. The armor uses a custom model that I made and textured personally.",
+    challenge:
+      "During my semester at Advanced Game Design, we had to do a deep dive. For this I went into the modding scene, specifically for Minecraft. I always wanted to make something unique in the game " +
+      "for myself, as I had spent many hours in it. Thus came the idea of creating Cat armor, an item that prevents the cat from taking damage to a certain threshold. Since Wolfs/Dogs already have it " +
+      "and as a cat lover myself, I wanted the cats to have this feature as well. \n\n" +
+      "This project made me realise how an actual game is structured, the ins and outs of the game, and how I could expand on it myself by staying true to its core design principles.",
+    results:
+      "You can download the mod, or see the page itself on: [Modrinth]{https://modrinth.com/mod/cat-armor}",
     workflow: [
       {
-        title: "",
-        summary: "",
+        title: "Learning the game",
+        summary:
+          "By really understanding how the game works fundamentally, what its core principles are, and their design decisions. I gained a lot of insights on what it really means to create " +
+          "something new for the game. And how my mod could add to that.",
+      },
+      {
+        title: "Mixins",
+        summary:
+          "During development I had to use Mixin to alter the base functionality of some functions, like the cat entity. This made me really get into the original code of the game and understand it " +
+          "on a deeper level. As I had to be careful by using Mixin, as it could break the game entirely if done wrong.",
+      },
+      {
+        title: "Modelling",
+        summary:
+          "To actually realize the model, I had to learn basic modelling. For this I used the tool: Blockbench, which is a low poly 3D editor. And I had to get into creating a sprite for the modal as well.",
+      },
+      {
+        title: "Publishing",
+        summary:
+          "To really get my mod out there, I published the mod onto a distribution site called: Modrinth. This site allows modders to share their creations for people to download.",
       },
     ],
     images: [
       {
-        source: "",
-        text: "",
+        source: "/images/catArmor/CatArmorModel.png",
+        text: "Creating the model in Blockbench, as well as creating a texture for it.",
+      },
+      {
+        source: "/images/catArmor/CatArmorError.png",
+        text: "Implementing the model correctly was harder than it looked. You really needed to get every pivot point and size correct.",
+      },
+      {
+        source: "/images/catArmor/CatArmorOverlay.png",
+        text: "By using overlaying textures instead of fully creating new ones, you could easily update the model to make it look more damaged, or even have it colored using Dye and changing the textures color dynamically!",
       },
     ],
   },
@@ -220,6 +297,8 @@ export const projects = [
       "Your grandmother wishes to use her milk for a bowl of cereal, but the milk is expired. It is now up to you and your brother to quickly get a fresh bottle before she will try to use water instead. " +
       "But oh-no, the trains are on a strike, you will have to parkour from the city to your Grandmothers home, which is several areas away. Setting the stage for a wide variety of environments and fun challenges.\n\n" +
       "Grandma's Milk is the result of a two-man, 4th semester project involving a mix of game design, C# programming, and level design. It was created within a six-week time period.",
+    challenge: "",
+    results: "",
     workflow: [
       {
         title: "",

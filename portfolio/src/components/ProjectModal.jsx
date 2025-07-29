@@ -1,4 +1,4 @@
-import { linkify } from "../utils/linkify.js";
+import { linkify } from "../utils/linkify.tsx";
 
 export default function ProjectModal(props) {
   return (
